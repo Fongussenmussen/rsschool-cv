@@ -7,7 +7,7 @@
 
 **Phone:** +380xxxxxxxxx
 
-**E-mail:** andrew_lebed@mail.ru
+**E-mail:** <a href="mailto:andrew_lebed@mail.ru">andrew_lebed@mail.ru</a> 
 
 **Discord:** Fongüssenmüssen#6752
 
