@@ -9,9 +9,9 @@
 
 **E-mail:** <a href="mailto:andrew_lebed@mail.ru">andrew_lebed@mail.ru</a> 
 
-**Discord:** Fongüssenmüssen#6752
+**Discord:** [Discord Profile](https://discordapp.com/users/326293436082683917/ "Дискорд")
 
-**CodeWars:** [CodeWars Profile](https://www.codewars.com/users/Fongussenmussen "Описание")
+**CodeWars:** [CodeWars Profile](https://www.codewars.com/users/Fongussenmussen/ "КодВарс")
 
 -------------
 ### Briefly about myself:
