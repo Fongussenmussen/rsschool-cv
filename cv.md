@@ -11,7 +11,7 @@
 
 **Discord:** Fongüssenmüssen#6752
 
-**CodeWars:** https://www.codewars.com/users/Fongussenmussen
+**CodeWars:** [CodeWars Profile](https://www.codewars.com/users/Fongussenmussen "Описание")
 
 -------------
 ### Briefly about myself:
