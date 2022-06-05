@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+
+	<script src="./js/clock.js" defer></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+	<script src="./js/slider.js" defer></script>
+	<script src="./js/flip.js" defer></script>
+	<title>Lebedynskyi Andrii | Portfolio</title>
+
+
+</head>
+<body>
+	<header class="header">
+		<div class="header__clock">
+			<div class="clock-hours">00</div>:
+			<div class="clock-minutes">00</div>:
+			<div class="clock-seconds">00</div>
+		</div>
+		<nav class="nav">
+			<ul>
+				<li id="about-me">ABOUT ME</li>
+				<li id="code-example">CODE EXAMPLE</li>
+				<li id="languages">MY SKILLS</li>
+			</ul>
+		</nav>
+	</header>
+<main class="main">
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<h1 class="heading">Hello, my name is Andrii Lebedynskyi</h1>
+				<p class="heading-description">
+					and I'm 27 years old lecturer at the Kharkiv university. My name and surname you could check on the top of this CV so let's skip this part. Being in high school I created my first site of WWII motorcycles using HTML Editor. It was ugly and lowfunctional program, but then, I was a God of Front-End because everyone was doing it in notepad. It was about 5-6 pages with inline styles but it was perfect. I achieved the best mark among all my classmates. Unfortunately, this site was lost... Then I almost forgot my passion because life was going on too fast and it was hard to drive it.
+					<p>This year I decided to revive my passion, skills and make comeback to World Wide Web. So let's roll!</p>
+				<h2 class="contacts">Contact Information:</h2>
+				<div class="my-contacts">
+					<a href="https://discordapp.com/users/326293436082683917" target="_blank"><img src="./img/discord.svg" alt="Discord" title="Discord"></a>
+					<a href="mailto:andrew_lebed@mail.ru"><img src="./img/mail.png" alt="Gmail" title="Mail"></a>
+					<a href="https://github.com/Fongussenmussen/" target="_blank"><img src="./img/github.svg" alt="GitHub" title="GitHub"></a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="code-wrapper">
+					<div class="code">
+						<h2 class="code__heading">Code example:</h2>
+						<p class="code__description"><span>"Counting sheep..." from CodeWars:</span> <em>Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).</em> For example:</p>
+ 						<h3>My solution:</h3>
+ 						<pre class="my-solution">
+let number = [];
+function countSheeps(arrayOfSheep) {
+	let positiveArr = arrayOfSheep.filter(function (number) {
+		return number === true;
+	});
+	return positiveArr.length;
+}</pre>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="skills"> 
+					<div class="skills__now">
+						<h2 class="skills__heading">What I've already got:</h2>
+						<div class="skills-pictures-now">
+							<div class="now-1">
+									<img src="./img/html5.svg" alt="HTML5">
+							</div>
+							<div class="now-2">
+								<img src="./img/css3.svg" alt="CSS3">
+							</div>
+							<div class="now-3">
+								<img src="./img/javascript.svg" alt="JavaScript">
+							</div>
+							<div class="now-4">
+								<img src="./img/sass.svg" alt="Sass">
+							</div>
+							<div class="now-5">
+								<img src="./img/github.svg" alt="GitHub">
+							</div>
+							<div class="now-6">
+								<img src="./img/figma.svg" alt="Figma">
+							</div>
+						</div>
+					</div>
+					<div class="skills__new">
+						<h2 class="skills__heading">What I'm working on now:</h2>
+						<div class="skills-pictures-new">
+							<div class="new-1">
+								<img src="./img/react.svg" alt="React">
+							</div>
+							<div class="new-2">
+								<img src="./img/webpack.svg" alt="Webpack">
+							</div>
+							<div class="new-3">
+								<img src="./img/nodejs.svg" alt="NodeJs">
+							</div>
+							<div class="new-4">
+								<img src="./img/algorithm.png" alt="Algorithm" title="Algorithm">
+							</div>
+						</div>
+					</div>
+					<div class="skills__language">
+						<h2 class="skills__heading">Languages:</h2>
+						<p class="skills__english">English: B1/B2</p>
+						<p>French: A1/A2</p>
+						<p>Russian: Native</p>
+						<p>Ukrainian: C1</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</main>
+<footer class="footer">
+	<div class="footer__description">
+		<h3>&#169; 2022 Fongussenmussen</h3>
+	</div>
+	<div class="footer__link">
+		<a href="https://rs.school/js-stage0/" target="_blank"><img src="./img/rs_school_js.svg" alt="rs-school" class="footer__logo"></a>
+	</div>
+</footer>
+</body>
+</html>
