@@ -1,11 +1,6 @@
 @font-face {
-  font-family: "Prototype", sans-serif;
-  src: url(../fonts/Prototype.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Sui Generis", sans-serif;
-  src: url(../fonts/sui-generis.otf) format("opentype");
-  font-weight: normal;
+  font-family: "Prototype";
+  src: url("../fonts/Prototype.ttf") format("truetype");
 }
 /* START OF RESET*/
 *,
@@ -85,8 +80,9 @@ html {
 
 body {
   position: relative;
-  font-family: Prototype, sans-serif;
-  background: url(../img/turtlewow_lapidis.png);
+  font-family: "Prototype", sans-serif;
+  background: -webkit-linear-gradient(90deg, #6FCEA9, #97AB30, #6FCEA9);
+  background: linear-gradient(90deg, #6FCEA9, #97AB30, #6FCEA9);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
@@ -103,18 +99,42 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.header nav > ul {
+.header nav ul {
   display: flex;
   gap: 20px;
 }
-.header nav > ul li {
+.header nav ul li {
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  line-height: 200%;
+  font-weight: 500;
+}
+.header nav ul li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header nav ul li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #354A7B;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 .header__clock {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3.8rem;
+  font-weight: semibold;
+}
+.header .nav {
+  font-weight: bold;
 }
 
 .heading {
@@ -122,6 +142,35 @@ body {
   text-align-last: left;
   margin: 0 auto;
   width: 80%;
+  font-weight: 600;
+}
+
+span.my-photo {
+  position: relative;
+  background: #458647;
+  cursor: pointer;
+  color: #D4BFBF;
+  opacity: 1;
+  font-weight: 500;
+}
+
+span.my-photo img {
+  position: absolute;
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  left: 330px;
+  display: none;
+  filter: grayscale(0);
+  z-index: 999;
+}
+
+span.my-photo:hover img {
+  opacity: 1;
+  display: block;
+  top: 0;
+  border: none;
+  border-radius: 0;
 }
 
 p {
@@ -153,7 +202,12 @@ p {
 img {
   width: 100px;
   height: 100px;
-  border: 2px solid #000000;
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: grayscale(0);
+  border: 2px solid #354A7B;
+  border-radius: 10%;
 }
 
 .code {
@@ -230,6 +284,25 @@ img {
   grid-row: 3/4;
 }
 
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__description {
+  padding: 5px;
+}
+.footer__description:hover {
+  border: 2px solid #354A7B;
+  border-radius: 10%;
+}
+.footer__logo {
+  height: 50px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   width: 70px;
@@ -246,7 +319,7 @@ img {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: 0.5s ease-in-out;
 }
 
@@ -258,16 +331,4 @@ img {
   content: url(../img/arrow_left.png);
 }
 
-.footer {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__logo {
-  height: 50px;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */
