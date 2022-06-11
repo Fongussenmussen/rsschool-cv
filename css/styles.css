@@ -284,6 +284,20 @@ img:hover {
   grid-row: 3/4;
 }
 
+.my-projects {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.projects-description {
+  padding-top: 30px;
+  text-align: left;
+  margin: 0;
+}
+.projects-description:hover {
+  text-decoration: underline;
+}
+
 .footer {
   width: 80%;
   margin: 0 auto;
